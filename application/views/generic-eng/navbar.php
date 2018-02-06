@@ -50,17 +50,7 @@
       <li><a href="#">CATEGORIES</a></li>
       <li><a href="#">LOGIN</a></li>
     </ul>
-	<!-- RIGHT: Search Bar-->
-    <form class="navbar-form navbar-right"  action="/action_page.php">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search products" name="search">
-        <div class="input-group-btn">
-          <button class="btn btn-default" type="submit">
-            <i class="glyphicon glyphicon-search"></i>
-          </button>
-        </div>
-      </div>
-    </form>
+	
 	
   </div>
 </nav>
