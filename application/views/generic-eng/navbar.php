@@ -3,9 +3,9 @@
 .logo{
     font-size:35px;
     color: #3A5A7F;	
-	text-decoration=none;
-	font-family: 'Shadows Into Light', cursive;
-	font-weight:bold;
+  	text-decoration=none;
+  	font-family: 'Shadows Into Light', cursive;
+  	font-weight:bold;
 }
 
 .logo:hover{
@@ -23,7 +23,6 @@
 .navbar-custom{
 	margin-top:10px;
 	font-family: 'Rajdhani', sans-serif;
-	//background-color: #3A5A7F;
 	font-size:15px;
 	font-weight:bold;
 }

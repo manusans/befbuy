@@ -19,7 +19,7 @@
   <p id='paragraph-header'>be sure you are choosing the best</p>
   <form class="form-inline">
     <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Find products" required>
+      <input type="search" class="form-control" size="50" placeholder="Find products" required>
       <div class="input-group-btn">
         <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-search"></i></button>
       </div>

@@ -27,14 +27,14 @@
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="<?php echo base_url(); ?>img/gaming.jpg" alt="Gaming">
-        <p><strong>Gaming</strong></p>
+        <img src="<?php echo base_url(); ?>img/computers.jpg" alt="Computers">
+        <p><strong>Computers</strong></p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="<?php echo base_url(); ?>img/gaming.jpg" alt="Gaming">
-        <p><strong>Gaming</strong></p>
+        <img src="<?php echo base_url(); ?>img/wearable.jpg" alt="Weareables">
+        <p><strong>Wearables</strong></p>
       </div>
     </div>
 </div>
