@@ -20,9 +20,11 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+		$this->load->model('m_befbuy');
+        $data["category"] = $this->m_befbuy->get_categories(); //get array including all categories info
 		$this->load->view('generic-eng/header');
 		$this->load->view('generic-eng/navbar');
 		$this->load->view('generic-eng/search');
-		$this->load->view('home-eng/categories');
+		$this->load->view('home-eng/categories', $data);
 	}
 }

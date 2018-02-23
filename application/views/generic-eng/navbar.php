@@ -1,39 +1,7 @@
 
 <style>
-.logo{
-    font-size:35px;
-    color: #3A5A7F;	
-  	text-decoration=none;
-  	font-family: 'Shadows Into Light', cursive;
-  	font-weight:bold;
-}
-
-.logo:hover{
-    color: #3A5A7F;	
-}
-
-.nav-custom a{
-    color: #3A5A7F;	
-}
-
-.nav-custom a:hover{
-    color: #3A5A7F;	
-}
-
-.navbar-custom{
-	margin-top:10px;
-	font-family: 'Rajdhani', sans-serif;
-	font-size:15px;
-	font-weight:bold;
-}
 
 </style>
-
-<?php
- $logo_stars = 0
-?>
-
-
 
 
 <nav class="navbar navbar-custom">
@@ -41,7 +9,6 @@
   	 <!-- LEFT: Logo Part -->
     <div class="navbar-header">
       <a class="navbar-brand logo" href="#">BefBuy</a> 
-	  <?php for($i=0; $i<$logo_stars; $i++){ echo '<span class="glyphicon glyphicon-star" style="font-size:15px; color:#F5A764; margin-top:8px; "></span>';}?>
     </div>
 	<!-- RIGHT: navigation Part -->
     <ul class="nav navbar-nav navbar-right nav-custom">
@@ -49,8 +16,7 @@
       <li><a href="#">CATEGORIES</a></li>
       <li><a href="#">LOGIN</a></li>
     </ul>
-	
-	
+    
   </div>
 </nav>
 

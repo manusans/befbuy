@@ -1,0 +1,50 @@
+
+/* */
+
+/* Navigation bar */
+.logo{
+    font-size:35px;
+    color: #3A5A7F;	
+  	text-decoration=none;
+  	font-family: 'Shadows Into Light', cursive;
+  	font-weight:bold;
+}
+.logo:hover{
+    color: #3A5A7F;	
+}
+.nav-custom a{
+    color: #3A5A7F;	
+}
+.nav-custom a:hover{
+    color: #3A5A7F;	
+}
+.navbar-custom{
+	margin-top:10px;
+	font-family: 'Rajdhani', sans-serif;
+	font-size:15px;
+	font-weight:bold;
+}
+
+/* home search bar */
+#search-header{
+  color: #3A5A7F; 
+  font-family: 'Shadows Into Light', cursive;
+  font-weight:bold;
+}
+#paragraph-header{
+  font-family: 'Rajdhani', sans-serif;
+  font-weight:bold;
+  margin-top: 20px;
+}
+
+/* categories displayed in home */
+#categories-content{
+  font-family: 'Rajdhani', sans-serif;
+  font-weight:bold;
+  margin-top: 50px;
+  width:80%;
+}
+#categories-row{
+  margin-top: 50px;
+}
+

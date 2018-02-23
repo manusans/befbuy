@@ -1,16 +1,4 @@
  <style>
-#search-header{
-  color: #3A5A7F; 
-  font-family: 'Shadows Into Light', cursive;
-  font-weight:bold;
-}
-
-
-#paragraph-header{
-  font-family: 'Rajdhani', sans-serif;
-  font-weight:bold;
-  margin-top: 20px;
-}
 
 </style>
 
