@@ -27,4 +27,5 @@ class Welcome extends CI_Controller {
 		$this->load->view('generic-eng/search');
 		$this->load->view('home-eng/categories', $data);
 	}
+
 }
