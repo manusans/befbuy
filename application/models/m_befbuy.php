@@ -36,7 +36,8 @@ public function get_products_category($category){ // return all products for a c
                 foreach ($queryProd->result() as $row)
                 {
                     $product['bef_prd_id'] = $row->bef_prd_id;
-                    $product['bef_prd_name'] = $row->bef_prd_id;
+                    $product['bef_prd_name'] = $row->bef_prd_name;
+                    $product['bef_prd_rate'] = $this->getProductRate( $row->bef_prd_id);
                     array_push($products, $product);
                 }
             } 
@@ -61,6 +62,21 @@ public function get_subcategories($category){ // return all products for a categ
         }
     }
     return $subcategory;
+}
+
+public function getProductRate($product_id){ // return the product rate average
+    $sum = 0;
+    $avg = 0;
+    $query = $this->db->query("SELECT bef_rev_rate FROM `review` WHERE bef_prd_id = $product_id");
+    if ($query->num_rows() > 0)
+    {
+        foreach ($query->result() as $row)
+        {
+            $sum += $row->bef_rev_rate;
+        }
+        $avg = $sum / ($query->num_rows());
+    }
+    return $avg;
 }
 
 

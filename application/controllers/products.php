@@ -12,7 +12,7 @@ class Products extends CI_Controller {
 		$this->load->view('generic-eng/navbar');
 		$this->load->view('generic-eng/search');
 		$this->load->view('category-eng/filters', $data); //filter to select a subcategory
-		$this->load->view('category-eng/products',$data); // list of all the products for category
+		#$this->load->view('category-eng/products',$data); // list of all the products for category
 	}
 
 	public function subcategory($subcategory)

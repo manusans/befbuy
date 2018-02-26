@@ -55,6 +55,7 @@
   display: inline-block;
   vertical-align: top;
   line-height: 1;
+  font-size: 20px;
 }
 
 .vertical-menu a {
@@ -82,14 +83,13 @@
 
   /* images */
   .thumb-prod-list{
-    width: 400px;
-    height: 400px;
-    overflow: hidden;
-  }
+    width: 200px;
+    height: 200px;
+    overflow: hidden;  }
 
   .products-content{
-    vertical-align: middle;
-    line-height: 1;
-    display: inline-block;
+    
+    
+    
     width: 80%;
   }
