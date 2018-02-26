@@ -88,8 +88,17 @@
     overflow: hidden;  }
 
   .products-content{
-    
-    
-    
     width: 80%;
   }
+
+
+/* rating stars */
+.checked {
+    color: orange;
+}
+
+.fa{
+  
+  font-size: 30px;
+}
+

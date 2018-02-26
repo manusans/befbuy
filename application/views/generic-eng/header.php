@@ -22,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Shadows+Into+Light|Rajdhani" rel="stylesheet"> 
     <link href="<?php echo base_url();?>css/custom.css" rel="stylesheet">
     <link href="<?php echo base_url();?>css/graphics.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
 <body>

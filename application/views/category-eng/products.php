@@ -1,10 +1,5 @@
 
 
-
-
-
-
-
 <div id='products-content' class="container-fluid text-center bg-grey">
   <div class="row text-center" id="products-row">
     <?php 
