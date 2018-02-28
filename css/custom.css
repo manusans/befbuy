@@ -83,8 +83,7 @@
 
   /* images */
   .thumb-prod-list{
-    width: 200px;
-    height: 200px;
+    width: auto;
     overflow: hidden;  }
 
   .products-content{
