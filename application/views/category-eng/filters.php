@@ -30,20 +30,7 @@
               .' </a>'
               .''
               ;
-      
-          echo '<div class="rating">'; #3 open
-          #print stars
-          for($i=1; $i<=$product["bef_prd_rate"]; $i++){
-                echo '<span class="fa fa-star checked" style="font-size:25px;"></span>';
-              }
-          $i -= 1;
-          #print half start if rate decimals >= 0.39
-          if($product['bef_prd_rate'] >= ($i + 0.39)){
-              	echo '<span class="fa fa-star-half checked" style="font-size:25px;"></span>';
-              	$i += 1;
-              }
-          echo '<p>('.$product['bef_prd_rate'].')</p>';
-          echo '</div>'; #3 close
+          $this->befbuy->get_graphic_rate($product["bef_prd_rate"]);
           echo '</div>'; #1 close
 
           if(($row % 3) == 0){

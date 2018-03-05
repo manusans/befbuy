@@ -79,9 +79,41 @@ public function getProductRate($product_id){ // return the product rate average
     return $avg;
 }
 
+#get and returns all product info
+public function get_product_info($product_id){
+            $query = $this->db->query("SELECT * FROM `product` WHERE bef_prd_id = $product_id");
+             if ($query->num_rows() > 0)
+                    {
+                        foreach ($query->result() as $row)
+                        {
+                                $product['bef_prd_id']=$row->bef_prd_id;
+                                $product['bef_prd_name']=$row->bef_prd_name;
+                                $product['bef_prd_description']=$row->bef_prd_description;
+                                $product['bef_prd_rate'] = $this->getProductRate( $row->bef_prd_id);
+                        }
+                    }
+                    return $product;
+}
 
-
-
+#get and returns all product info
+public function get_product_reviews($product_id){
+    $reviews = array();
+    $query = $this->db->query("SELECT * FROM `review` where bef_prd_id = $product_id");
+    if($query->num_rows() > 0)
+    {
+        foreach($query->result() as $row)
+        {
+            $review['bef_rev_id'] = $row->bef_rev_id;
+            $review['bef_rev_title'] = $row->bef_rev_title;
+            $review['bef_rev_content'] = $row->bef_rev_content;
+            $review['bef_rev_rate'] = $row->bef_rev_rate;
+            $review['bef_usr_id'] = $row->bef_usr_id;
+            $review['bef_rev_date'] = $row->bef_rev_date;
+            array_push($reviews, $review);
+        }
+    }
+    return $reviews;
+}
 
 
 }

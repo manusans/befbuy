@@ -18,7 +18,19 @@ class Products extends CI_Controller {
 	public function subcategory($subcategory)
 	{
 		$this->load->model('m_befbuy');
-		$data["product"] = $this->m_befbuy->get_products_subcategory($subcategory); //get array including all products for category
+		$data["product"] = $this->m_befbuy->get_products_subcategory($subcategory); //get array including all products for subcategory
 
+	}
+
+	public function product($product_id)
+	{
+		$this->load->model('m_befbuy');
+		$data["product_info"] = $this->m_befbuy->get_product_info($product_id); //get array including all products info
+		$data["product_reviews"] = $this->m_befbuy->get_product_reviews($product_id); //get array including all products info
+		$this->load->view('generic-eng/header');
+		$this->load->view('generic-eng/navbar');
+		$this->load->view('generic-eng/search');
+		$this->load->view('product-eng/product_sheet', $data); 
+		$this->load->view('product-eng/product_reviews', $data);
 	}
 }
