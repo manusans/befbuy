@@ -19,4 +19,17 @@ class Befbuy {
           echo '<p>('.$numeric_rate.')</p>';
           echo '</div>'; #3 close
         }
+
+        public function get_rate_count($rate_count)
+        {
+          for($i=0;$i<=5;$i++){
+            echo '<a href="#">';
+            echo '[ '.$rate_count[$i].' ]   ';
+            for($star=0;$star<$i;$star++){
+              echo '<span class="fa fa-star checked" style="font-size:25px;"></span>';
+            }
+            echo '</a>';
+            echo '<br>';
+          }
+        }
 }

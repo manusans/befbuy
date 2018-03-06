@@ -98,22 +98,26 @@ public function get_product_info($product_id){
 #get and returns all product info
 public function get_product_reviews($product_id){
     $reviews = array();
+    $reviews['bef_rate_count'] = array(0,0,0,0,0,0);//contain the count of reviews rated with [0], [1], [2], [3], [4] ,[5] stars
+
     $query = $this->db->query("SELECT * FROM `review` where bef_prd_id = $product_id");
     if($query->num_rows() > 0)
     {
         foreach($query->result() as $row)
         {
+
             $review['bef_rev_id'] = $row->bef_rev_id;
             $review['bef_rev_title'] = $row->bef_rev_title;
             $review['bef_rev_content'] = $row->bef_rev_content;
             $review['bef_rev_rate'] = $row->bef_rev_rate;
             $review['bef_usr_id'] = $row->bef_usr_id;
             $review['bef_rev_date'] = $row->bef_rev_date;
+            $reviews['bef_rate_count'][$row->bef_rev_rate] += 1;
+
             array_push($reviews, $review);
         }
     }
     return $reviews;
 }
-
 
 }

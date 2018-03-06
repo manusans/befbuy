@@ -7,9 +7,11 @@
    </div>
    <div class="col-md-6">
     <div class="col-md-12">
-   		<h1 class="prod-title"><?php echo $product_info['bef_prd_name']; ?></h1>
+   		<h1 class="section-title"><?php echo $product_info['bef_prd_name']; ?></h1>
    		<?php $this->befbuy->get_graphic_rate($product_info['bef_prd_rate']); ?>
- 	</div>
+      <?php echo $product_info['bef_prd_description'];?>
+ 	  </div>
    </div>
   </div><!-- end row -->
  </div><!-- end container -->
+ <hr>
