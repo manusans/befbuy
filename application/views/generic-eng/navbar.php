@@ -12,7 +12,7 @@
     </div>
 	<!-- RIGHT: navigation Part -->
     <ul class="nav navbar-nav navbar-right nav-custom">
-      <li class="active"><a href="#">HOME</a></li>
+      <li class="active"><a href="<?php echo base_url(); ?>">HOME</a></li>
       <li><a href="#">CATEGORIES</a></li>
       <li><a href="#">LOGIN</a></li>
     </ul>

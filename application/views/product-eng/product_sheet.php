@@ -1,5 +1,5 @@
-<div class="container" id="product-section">
-  <div class="row">
+<div class="container" style="width: 80%;" id="product-section">
+  <div class="row well">
    <div class="col-md-6">
    	<div class="col-md-12 thumbnail thumb-prod-list">
     	<img src="<?php echo base_url().'productmedia/'.$product_info['bef_prd_id'].'/1.jpeg'; ?>">

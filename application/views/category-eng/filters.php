@@ -1,8 +1,11 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
 
 
-<div class='container'>
-<div class="row" id="">
-	<div class="col-sm-1 vertical-menu ">
+
+	<div class="sidenav">
 	 	<?php
 	 		foreach ($subcategories as $subcategory) {
 	 				# code...
@@ -12,12 +15,13 @@
 
 	</div>
 
-  
+  <div class='container' style="width:70%;">
+<div class="row well" id="">
     <?php 
       $row = 1;
       
       foreach($products as $product){
-          echo '<div class="col-sm-3">'; #1 open
+          echo '<div class="col-xs-12 col-sm-6 col-lg-4">'; #1 open
           #display products
           echo 
                ''
@@ -35,12 +39,13 @@
 
           if(($row % 3) == 0){
             echo '</div>'; #0 close
-            echo '<div class="row"><div class="col-sm-1 vertical-menu "></div>'; #0 open
+            echo '<hr size="10">';
+            echo '<div class="row well">'; #0 open
           }
           $row += 1;
       }
        if(($row % 3) != 0){
-           echo '</div>'; #0 close
+           #echo '</div>'; #0 close
        }
     ?>
 </div>
