@@ -121,16 +121,3 @@ body {
 .well{
   background: #fefefe;
 }
-
-.thumbnail{
-  min-height: 150px;
-  max-height: 150px;
-}
-
-#single-prod{
-  margin-top: 30px;
-}
-
-#prod-title{
-  min-height: 40px;
-}
