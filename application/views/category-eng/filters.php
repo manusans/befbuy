@@ -21,12 +21,12 @@
       $row = 1;
       
       foreach($products as $product){
-          echo '<div class="col-xs-12 col-sm-6 col-lg-4">'; #1 open
+          echo '<div id="single-prod" class="col-xs-2 col-sm-3 col-lg-2">'; #1 open
           #display products
           echo 
                ''
               .' <a href="'.base_url().'products/product/'.$product['bef_prd_id'].'">'
-              .' <p> '. $product['bef_prd_name'] .' </p>'
+              .' <div id="prod-title"><p > '. $product['bef_prd_name'] .' </p></div>'
               .'   <div class="thumbnail thumb-prod-list">' #2 open
               .'    <img src="'.base_url()."productmedia/".$product['bef_prd_id'].'/1.jpeg">'
               .'   </div>' #2 close
@@ -38,9 +38,9 @@
           echo '</div>'; #1 close
 
           if(($row % 3) == 0){
-            echo '</div>'; #0 close
-            echo '<hr size="10">';
-            echo '<div class="row well">'; #0 open
+            //echo '</div>'; #0 close
+            //echo '<hr size="10">';
+            //echo '<div class="row well">'; #0 open
           }
           $row += 1;
       }
@@ -48,6 +48,7 @@
            #echo '</div>'; #0 close
        }
     ?>
+  </div>
 </div>
 </div>
 
